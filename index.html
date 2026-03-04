@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditoría Digital — Magna | Reporte de Riesgo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <div class="container flex-between">
+            <div class="logo">AUDIT<span>PRO</span></div>
+            <div class="client-id">CLIENTE: <strong>MAGNA</strong> | CLASIFICACIÓN: CONFIDENCIAL</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section & Risk Score -->
+        <section class="hero container">
+            <div class="hero-content fade-in">
+                <p class="eyebrow">Reporte de Diagnóstico Técnico</p>
+                <h1>Auditoría Digital<br><span class="highlight">Magna</span></h1>
+                <p class="subtitle">Evaluación de Arquitectura UI/UX, CRO y Estrategia de Conversión.</p>
+            </div>
+            <div class="risk-widget fade-in">
+                <div class="risk-circle">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle focus-ring" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <div class="risk-number">
+                        <span id="score-counter">0</span><span class="percent">%</span>
+                    </div>
+                </div>
+                <div class="risk-label">Nivel de Riesgo Crítico</div>
+            </div>
+        </section>
+
+        <!-- Executive Summary -->
+        <section class="summary container fade-in">
+            <h2>Resumen Ejecutivo</h2>
+            <div class="summary-box">
+                <p>Magna cuenta con una base funcional que acierta en mostrar sus productos desde el primer contacto y en incluir llamadas a la acción (CTAs) visibles. Sin embargo, el sitio sufre de una propuesta de valor difusa en el Above the Fold y una identidad visual genérica que no refleja la calidad de los servicios web que comercializan.</p>
+                <p>Para escalar la captación de leads, es imperativo refactorizar la UI para generar confianza inmediata (efecto "el medio es el mensaje"), integrar Social Proof estratégico y pivotar la estrategia de contenidos en redes sociales hacia formatos educativos y demostrativos, eliminando contenido de relleno.</p>
+            </div>
+        </section>
+
+        <!-- Findings Grid -->
+        <section class="findings container">
+            <h2 class="fade-in">Hallazgos Críticos</h2>
+            <div class="grid">
+                <!-- Card 1 -->
+                <article class="card critical fade-in">
+                    <div class="card-header">
+                        <span class="badge badge-critical">🔴 Crítico</span>
+                        <span class="category">UX & Diseño</span>
+                    </div>
+                    <h3>Incongruencia de Calidad UI/UX</h3>
+                    <p class="impact"><strong>Impacto:</strong> Reputación / Conversión</p>
+                    <p class="diagnosis">El frontend actual es genérico. Siendo proveedores de web, su propio sitio debe ser una prueba irrefutable de su capacidad técnica y de diseño.</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card critical fade-in">
+                    <div class="card-header">
+                        <span class="badge badge-critical">🔴 Crítico</span>
+                        <span class="category">CRO / Contenido</span>
+                    </div>
+                    <h3>Fricción en Propuesta de Valor (UVP)</h3>
+                    <p class="impact"><strong>Impacto:</strong> Tráfico / Rebote</p>
+                    <p class="diagnosis">El Hero Section (primer impacto visual) no comunica de forma unívoca qué problema resuelven ni para qué nicho.</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card warning fade-in">
+                    <div class="card-header">
+                        <span class="badge badge-warning">🟡 Importante</span>
+                        <span class="category">UX & Diseño</span>
+                    </div>
+                    <h3>Paleta Cromática y Accesibilidad</h3>
+                    <p class="impact"><strong>Impacto:</strong> Retención / UX</p>
+                    <p class="diagnosis">El uso excesivo de negro genera una formalidad rígida. El color verde presenta riesgos de contraste (Accesibilidad WCAG) y fatiga visual si no se balancea.</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card warning fade-in">
+                    <div class="card-header">
+                        <span class="badge badge-warning">🟡 Importante</span>
+                        <span class="category">CRO</span>
+                    </div>
+                    <h3>Déficit de Social Proof (Confianza)</h3>
+                    <p class="impact"><strong>Impacto:</strong> Conversión</p>
+                    <p class="diagnosis">Faltan testimonios validados e historias de éxito visibles en etapas tempranas del Customer Journey.</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card warning fade-in">
+                    <div class="card-header">
+                        <span class="badge badge-warning">🟡 Importante</span>
+                        <span class="category">Contenido</span>
+                    </div>
+                    <h3>Estrategia de Contenidos Desenfocada</h3>
+                    <p class="impact"><strong>Impacto:</strong> Captación / CAC</p>
+                    <p class="diagnosis">Publicación de frases motivacionales que generan vanity metrics pero no prospectos B2B (Leads). Formato Reels con baja calidad/enfoque.</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card success fade-in">
+                    <div class="card-header">
+                        <span class="badge badge-success">🟢 Recomendado</span>
+                        <span class="category">Posicionamiento</span>
+                    </div>
+                    <h3>Ausencia de Humanización</h3>
+                    <p class="impact"><strong>Impacto:</strong> Marca / Confianza</p>
+                    <p class="diagnosis">Falta una cara visible o bloque de "Sobre Nosotros" estratégico que conecte emocionalmente y diferencie a la marca de competidores low-cost.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recommendations -->
+        <section class="recommendations container fade-in">
+            <h2>Plan de Acción y Refactorización</h2>
+            
+            <div class="rec-item">
+                <div class="rec-number">01</div>
+                <div class="rec-content">
+                    <h3>Reestructuración del Above the Fold (Hero Section)</h3>
+                    <div class="rec-grid">
+                        <div class="rec-col">
+                            <h4>🎯 Qué hacer</h4>
+                            <p>Rediseñar la primera pantalla para responder a 3 preguntas en menos de 5 segundos: ¿Qué hacemos? ¿Para quién lo hacemos? y ¿Cómo empezar? (CTA).</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚠️ Por qué importa</h4>
+                            <p>Aunque los productos están claros y el CTA existe, si el usuario no entiende el valor diferencial inmediatamente, abandonará el sitio (alto Bounce Rate).</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚙️ Cómo implementarlo</h4>
+                            <p>Cambiar el copy por un titular orientado a beneficios (UVP). Acompañar con una sub-línea descriptiva y asegurar que la jerarquía de la tipografía guíe el ojo directo al botón de acción.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-number">02</div>
+                <div class="rec-content">
+                    <h3>Refactorización Visual y Sistema de Diseño (UI)</h3>
+                    <div class="rec-grid">
+                        <div class="rec-col">
+                            <h4>🎯 Qué hacer</h4>
+                            <p>Suavizar la paleta de colores, modernizar la tipografía y darle "dinamismo" al frontend (micro-interacciones, animaciones sutiles).</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚠️ Por qué importa</h4>
+                            <p>En la venta de servicios web, la propia página es el vendedor más importante. Un sitio genérico destruye la autoridad. El negro absoluto (#000000) suele ser muy agresivo; el verde debe revisarse para pasar estándares de contraste.</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚙️ Cómo implementarlo</h4>
+                            <p>Usar tonos de gris muy oscuros (ej. #121212) en lugar de negro puro para ganar sofisticación sin pesadez. Utilizar el verde exclusivamente como color de acento. Mejorar la familia tipográfica (ej. Inter).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-number">03</div>
+                <div class="rec-content">
+                    <h3>Inyección de Social Proof e Identidad (Sobre Nosotros)</h3>
+                    <div class="rec-grid">
+                        <div class="rec-col">
+                            <h4>🎯 Qué hacer</h4>
+                            <p>Mover la sección de "Sobre Nosotros" y testimonios a la página de inicio, justo debajo de la propuesta de valor o servicios.</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚠️ Por qué importa</h4>
+                            <p>La prueba social reduce la ansiedad de compra. Mostrar la "cara visible" de la agencia humaniza la transacción y fomenta la creación de comunidad.</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚙️ Cómo implementarlo</h4>
+                            <p>Integrar bloques de testimonios con foto, nombre, cargo y resultados. Añadir una breve sección del equipo fundador o filosofía orientada al nicho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec-item">
+                <div class="rec-number">04</div>
+                <div class="rec-content">
+                    <h3>Pivot de Estrategia de Contenidos (Inbound & Social)</h3>
+                    <div class="rec-grid">
+                        <div class="rec-col">
+                            <h4>🎯 Qué hacer</h4>
+                            <p>Detener la publicación de frases motivacionales. Reemplazarlas por contenido de valor accionable y optimizar Reels.</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚠️ Por qué importa</h4>
+                            <p>Las frases motivacionales no cualifican a la audiencia ni demuestran expertise técnico (no generan leads).</p>
+                        </div>
+                        <div class="rec-col">
+                            <h4>⚙️ Cómo implementarlo</h4>
+                            <p>Crear Reels mostrando el "Detrás de escena", auditorías rápidas de sitios mal hechos, o tips de conversión. A mediano plazo, estructurar un hub de recursos técnicos (SEO/SEM).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics & Roadmap -->
+        <section class="metrics-roadmap container fade-in">
+            <div class="split-layout">
+                <div class="metrics">
+                    <h2>Métricas a Monitorear</h2>
+                    <ul class="metric-list">
+                        <li><strong>Tasa de Rebote (Bounce Rate) en la Home:</strong> Validar retención del nuevo Hero Section.</li>
+                        <li><strong>CTR en el CTA Principal:</strong> Medir efectividad del rediseño visual/tipográfico.</li>
+                        <li><strong>Generación de Leads (MQLs):</strong> Sustituir "Likes" por formularios completados vía tráfico social.</li>
+                        <li><strong>Scroll Depth:</strong> Verificar llegada a secciones de Testimonios y "Sobre Nosotros".</li>
+                    </ul>
+                </div>
+                
+                <div class="roadmap">
+                    <h2>Próximos Pasos (Roadmap)</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="time">Quick Wins (1-2 semanas)</span>
+                            <p>- Eliminar contenido motivacional.<br>- Ajustar contraste del color verde.<br>- Subir 2-3 testimonios textuales fuertes a la Home.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">Corto Plazo (1 mes)</span>
+                            <p>- Reescribir copy de la página principal (nicho).<br>- Crear piloto educativo/tutorial para Reels.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">Mediano Plazo (2-3 meses)</span>
+                            <p>- Ejecutar rediseño completo del frontend (UI/UX).<br>- Lanzar campaña SEM con Landing Pages dedicadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container flex-between">
+            <p>&copy; 2026 AuditPro Analytics. Documento de uso exclusivo para MAGNA.</p>
+            <p>Generado por Sistema de Auditoría Avanzada</p>
+        </div>
+    </footer>
+</body>
+</html>
